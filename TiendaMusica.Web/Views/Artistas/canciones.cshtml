@@ -1,0 +1,46 @@
+﻿@model IEnumerable<TiendaMusica.Logica.ViewModels.TracksViewModel>
+@using TiendaMusica.Logica.Comun
+@{
+    ViewBag.Title = "canciones";
+}
+
+<h2>canciones</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tituloCancion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.duracion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.archivo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tituloCancion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.duracion)
+        </td>
+        <td>
+            @if (item.archivo != null)
+            {
+                <audio src="~/Media/@item.archivo"></audio>
+            }
+        </td>
+        <td>
+            <a href="/admin/@Utilidades.TransformarNombre2(item.album)/@Utilidades.TransformarNombre2(item.tituloCancion)/editar">Editar</a>
+        </td>
+    </tr>
+}
+
+</table>

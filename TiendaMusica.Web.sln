@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMusica.Web", "TiendaMusica.Web\TiendaMusica.Web.csproj", "{7AF74504-0331-4AA5-9675-7B90CD70813E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMusica.Data", "TiendaMusica.Data\TiendaMusica.Data.csproj", "{7613AAB0-A4E6-41BF-A5E6-B5F9A341D406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMusica.Dominio", "TiendaMusica.Dominio\TiendaMusica.Dominio.csproj", "{7658F1E3-AFB6-446F-9BB6-B5144EA948DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMusica.Logica", "TiendaMusica.Logica\TiendaMusica.Logica.csproj", "{70CC1F09-821F-4B8A-B871-8A09BC6065AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMusica.Infraestructura", "TiendaMusica.Infraestructura\TiendaMusica.Infraestructura.csproj", "{F10C8301-59E5-4741-93F1-9376BB73BD83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMusica.Data.EF", "TiendaMusica.Data.EF\TiendaMusica.Data.EF.csproj", "{19813C5A-E6E4-4916-9277-2AA3FCA416DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMusica.Data.InsightDB", "TiendaMusica.Data.InsightDB\TiendaMusica.Data.InsightDB.csproj", "{9CEB666E-E4AE-4F52-B3D6-C1DB06C12062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AF74504-0331-4AA5-9675-7B90CD70813E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF74504-0331-4AA5-9675-7B90CD70813E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF74504-0331-4AA5-9675-7B90CD70813E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF74504-0331-4AA5-9675-7B90CD70813E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7613AAB0-A4E6-41BF-A5E6-B5F9A341D406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7613AAB0-A4E6-41BF-A5E6-B5F9A341D406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7613AAB0-A4E6-41BF-A5E6-B5F9A341D406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7613AAB0-A4E6-41BF-A5E6-B5F9A341D406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7658F1E3-AFB6-446F-9BB6-B5144EA948DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7658F1E3-AFB6-446F-9BB6-B5144EA948DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7658F1E3-AFB6-446F-9BB6-B5144EA948DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7658F1E3-AFB6-446F-9BB6-B5144EA948DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70CC1F09-821F-4B8A-B871-8A09BC6065AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CC1F09-821F-4B8A-B871-8A09BC6065AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CC1F09-821F-4B8A-B871-8A09BC6065AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CC1F09-821F-4B8A-B871-8A09BC6065AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F10C8301-59E5-4741-93F1-9376BB73BD83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10C8301-59E5-4741-93F1-9376BB73BD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10C8301-59E5-4741-93F1-9376BB73BD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10C8301-59E5-4741-93F1-9376BB73BD83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19813C5A-E6E4-4916-9277-2AA3FCA416DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19813C5A-E6E4-4916-9277-2AA3FCA416DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19813C5A-E6E4-4916-9277-2AA3FCA416DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19813C5A-E6E4-4916-9277-2AA3FCA416DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CEB666E-E4AE-4F52-B3D6-C1DB06C12062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CEB666E-E4AE-4F52-B3D6-C1DB06C12062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CEB666E-E4AE-4F52-B3D6-C1DB06C12062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CEB666E-E4AE-4F52-B3D6-C1DB06C12062}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
