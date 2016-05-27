@@ -60,16 +60,16 @@ namespace TiendaMusica.Logica
 
         }
 
-        public IEnumerable<TracksViewModel> canciones(string cancion, string album)
+        public IEnumerable<TracksViewModel> canciones(string artista, string album)
         {
             string AlbumConvertido = Utilidades.TransformarNombre(album);
-            string cancionConvertido = Utilidades.TransformarNombre(cancion);
+            string ArtistaConvertido = Utilidades.TransformarNombre(artista);
             return db.ConsultaAdHoc<TracksViewModel>
                 ("Select a.Name tituloCancion, a.Milliseconds duracion, a.Archivo archivo,b.Title album from dbo.Track a" +
                 " inner join dbo.Album b on a.AlbumId = b.AlbumId"+
                 " inner join dbo.Artist c on c.ArtistId = b.ArtistId "+
-                " Where a.Name = @CancionName and b.Title = @AlbumNombre",
-                new { CancionName = cancionConvertido, AlbumNombre = AlbumConvertido });
+                " Where c.Name = @ArtistaName and b.Title = @AlbumNombre",
+                new { ArtistaName = ArtistaConvertido, AlbumNombre = AlbumConvertido });
         }
 
         public void updateTrack(EditTrackViewModel model)
@@ -91,17 +91,16 @@ namespace TiendaMusica.Logica
                 }).Single();
         }
 
-        public EditTrackViewModel GetTrack(string artista, string album)
+        public EditTrackViewModel GetTrack(string cancion, string album)
         {
             string AlbumConvertido = Utilidades.TransformarNombre(album);
-            string artistaConvertido = Utilidades.TransformarNombre(artista);
+            string CancionConvertido = Utilidades.TransformarNombre(cancion);
             return db.ConsultaAdHoc<EditTrackViewModel>("  select t.TrackId id, t.Name Name, t.Archivo Archivo"+
   " from dbo.Track t "+
   "inner join dbo.Album a on a.AlbumId = t.AlbumId "+
-  "inner join dbo.Artist r on r.ArtistId = t.ArtistId "+
-  "Where a.Title = @pAlbumConvertido and r.Name = @partistaConvertido;",
+  "Where a.Title = @pAlbumConvertido and t.Name = @pCancionConvertido;",
   new { pAlbumConvertido = AlbumConvertido,
-      partistaConvertido = artistaConvertido
+      pCancionConvertido = CancionConvertido
   }).Single();
         }
         public EditTrackViewModel GetTrack(int id)

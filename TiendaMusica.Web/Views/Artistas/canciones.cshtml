@@ -34,7 +34,10 @@
         <td>
             @if (item.archivo != null)
             {
-                <audio src="~/Media/@item.archivo"></audio>
+                <audio controls>
+                    <source src="~/Media/@item.archivo" type="audio/mpeg">
+                    Tu navegador no soporta audios
+                </audio>
             }
         </td>
         <td>

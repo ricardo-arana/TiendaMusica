@@ -39,8 +39,12 @@
         }
     </div>
     <div class="col-md-6">
-        @if(Model.Archivo != null) { 
-        <audio src="~/Media/@Model.Archivo"></audio>
+        @if (Model.Archivo != null)
+        {
+            <audio controls>
+                <source src="~/Media/@Model.Archivo" type="audio/mpeg">
+                Tu navegador no soporta audios
+            </audio>
         }
     </div>
 </div>

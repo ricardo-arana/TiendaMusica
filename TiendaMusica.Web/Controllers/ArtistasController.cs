@@ -78,7 +78,7 @@ namespace TiendaMusica.Web.Controllers
         {
 
             string narchivo = (DateTime.Now.ToString("yyyyMMddHHmmss") + "-" + file.FileName).ToLower();
-            file.SaveAs(Server.MapPath("~/Uploads/" + narchivo));
+            file.SaveAs(Server.MapPath("~/Media/" + narchivo));
             model.Archivo = narchivo;
             tienda.updateTrack(model);
 
